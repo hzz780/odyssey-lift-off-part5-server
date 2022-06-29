@@ -45,6 +45,7 @@ const typeDefs = gql`
     numberOfViews: Int
     "The track's complete array of Modules"
     modules: [Module!]!
+    durationInSeconds: String
   }
 
   "Author of a complete Track or a Module"
@@ -67,6 +68,7 @@ const typeDefs = gql`
     content: String
     "The module's video url, for video-based modules"
     videoUrl: String
+    durationInSeconds: String
   }
 `;
 
